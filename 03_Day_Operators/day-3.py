@@ -30,3 +30,45 @@ area_circle = 3.14*radius*radius
 circumference_circle = 2*3.14*radius
 print("Area of circle is : ",area_circle)
 print("Circumference of circle is : ", circumference_circle)
+
+#slope of a line
+x1=int(input("Enter the x1 : "))
+y1=int(input("Enter the y1 : "))
+x2=int(input("Enter the x2 : "))
+y2=int(input("Enter the y2 : "))
+slope = (y2-y1)/(x2-x1)
+print("Slope of the line is : ", slope)
+
+#slope of a line 
+
+# Equation: y = 2x - 2
+
+# 1. Slope
+slope = 2
+
+# 2. X-intercept: set y = 0
+x_intercept = 2 / 2
+
+# 3. Y-intercept: set x = 0
+y_intercept = 2 * 0 - 2
+
+print("Slope:", slope)
+print("X-intercept:", x_intercept)
+print("Y-intercept:", y_intercept)
+
+#euclidean distance and slope finding 
+
+import math
+
+# Given points
+x1, y1 = 2, 2
+x2, y2 = 6, 10
+
+# Calculate slope
+slope = (y2 - y1) / (x2 - x1)
+
+# Calculate Euclidean distance
+distance = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
+
+print("Slope:", slope)
+print("Euclidean distance:", distance)
