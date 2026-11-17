@@ -97,3 +97,38 @@ print(sentence.index('because'))
 print(sentence.find('because'))
 #Use rindex to find the position of the last occurrence of the word because in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
 print(sentence.rindex('because'))
+#Slice out the phrase 'because because because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
+print(sentence[31:47])
+#Find the position of the first occurrence of the word 'because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
+print(sentence.find('because'))
+# Does 'Coding For All' start with a substring _Coding_?
+print(company.startswith('Coding'))
+# Does 'Coding For All' end with a substring _coding_?
+print(company.endswith('coding'))
+#'&nbsp;&nbsp; Coding For All &nbsp;&nbsp;&nbsp; &nbsp;' &nbsp;, remove the left and right trailing spaces in the given string.
+string_with_spaces = '   Coding For All      '
+print(string_with_spaces.strip())
+#Which one of the following variables return True when we use the method isidentifier():
+print('30DaysOfPython'.isidentifier())  # True
+print('thirty_days_of_python'.isidentifier())  # True
+#The following list contains the names of some of python libraries: ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']. Join the list with a hash with space string.
+libraries = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
+print(' # '.join(libraries))
+#Use the new line escape sequence to separate the following sentences.
+print("I am enjoying this challenge.\nI just wonder what is next.")
+#Use a tab escape sequence to write the following lines.
+print("Name\t\tAge\tCountry\tCity\nAsabeneh\t250\tFinland\tHelsinki")
+#Use the string formatting method to display the following:
+radius = 10
+area = 3.14 * radius ** 2
+print("The area of a circle with radius {} is {} meters square.".format(radius, area))
+#Use the string formatting method to display the following:
+a = 8
+b = 6
+print("{} + {} = {}".format(a, b, a + b))
+print("{} - {} = {}".format(a, b, a - b))
+print("{} * {} = {}".format(a, b, a * b))
+print("{} / {} = {}".format(a, b, a / b))
+print("{} % {} = {}".format(a, b, a % b))
+print("{} // {} = {}".format(a, b, a // b))
+print("{} ** {} = {}".format(a, b, a ** b))
